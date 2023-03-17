@@ -10,17 +10,17 @@ t.down()
 t.goto(150, -40)
 t.up()
 t.goto(0,0)
-t.ht()  # прячем черепаху которая рисует финишную черту
+t.ht()  
 
-y = 100  # объявляем начальную координату по высоте
-for color in colors:  # для каждого цвета
-	racer = t.Turtle()  # создаём объект гонщика
-	racer.color(color)  # устанавливаем цвет гонщику
-	racer.shape('turtle')  # говорим, что форма нашего гонщика - черепаха
-	racer.up()  # поднимаем перо, чтобы гонщик не оставлял след при движении
-	racer.goto(-100, y)  # перемещаем гонщика на линию старта
-	racers.append(racer)  # добавляем гонщика в список наших участников racers
-	y -= 20  # изменяем координату y для следующего гощика
+y = 100  
+for color in colors:  
+	racer = t.Turtle() 
+	racer.color(color)  
+	racer.shape('turtle')  
+	racer.up()  
+	racer.goto(-100, y)  
+	racers.append(racer)  
+	y -= 20  
 
 racing = True
 while racing:
